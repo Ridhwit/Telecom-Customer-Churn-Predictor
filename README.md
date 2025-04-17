@@ -4,12 +4,11 @@
 The Telecom Customer Churn Predictor is a machine learning-based solution that identifies customers who are likely to leave a telecom service provider. By leveraging customer data such as tenure, charges, contract type, and demographic details, the model helps telecom companies take proactive measures to reduce churn and improve customer retention.
 
 ## 🧠 Model Overview
-This project uses a **Random Forest Classifier** trained on telecom customer data. To enhance prediction accuracy and handle class imbalance, we employed **SMOTEENN** (a hybrid of oversampling and cleaning techniques). The model was trained and evaluated using proper metrics and then deployed with a **Streamlit** web interface for interactive predictions.
+This project uses a **Random Forest Classifier** trained on telecom customer data. To enhance prediction accuracy and handle class imbalance, we employed **SMOTEENN**(Synthetic Minority Over-sampling Technique with Edited Nearest Neighbors) which is a hybrid of oversampling and cleaning techniques. 
 
 ## 🌟 Key Features
 - Predicts whether a customer is likely to churn based on inputs.
 - Handles imbalanced datasets with **SMOTEENN** resampling.
-- Deployed using **Streamlit** for easy web-based interaction.
 - Accepts key customer features like tenure, charges, contract type, etc.
 - Outputs churn prediction in real time.
 
@@ -25,12 +24,17 @@ This project uses a **Random Forest Classifier** trained on telecom customer dat
 - Precision (Churn): 0.92
 - Recall (Churn): 0.97
 - F1-score (Churn): 0.94
+By applying SMOTEENN, the model's performance improved drastically, particularly in predicting the minority class (churn), leading to better recall and more accurate results.
 
 Confusion Matrix:
 
 
 ## 🎯 Business Objective
-To identify and predict potential customer churn, enabling telecom businesses to retain more customers by offering personalized retention plans before they leave.
+Customer churn prediction is crucial for telecom companies to:
+
+- Identify high-risk customers and proactively intervene to retain them.
+- Minimize customer attrition by offering personalized incentives and services.
+- Improve customer satisfaction and loyalty by addressing issues before they lead to churn.
 
 ## 📈 Output & Impact
 - **Output**: Predicts whether a given customer is likely to churn.
@@ -40,7 +44,7 @@ To identify and predict potential customer churn, enabling telecom businesses to
 - Add more customer features to improve model performance.
 - Integrate customer interaction history or service complaints.
 - Deploy the model with a backend API for real-time production use.
-- Add explainability using tools like SHAP to interpret predictions.
+- The model can be further improved by incorporating additional features such as customer complaints, network issues, and more advanced machine learning techniques (e.g., XGBoost, LightGBM).
 
 ## ⚙️ How the Model is Working
 
