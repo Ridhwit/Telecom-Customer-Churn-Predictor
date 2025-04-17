@@ -26,8 +26,6 @@ This project uses a **Random Forest Classifier** trained on telecom customer dat
 - F1-score (Churn): 0.94
 By applying SMOTEENN, the model's performance improved drastically, particularly in predicting the minority class (churn), leading to better recall and more accurate results.
 
-Confusion Matrix:
-
 
 ## 🎯 Business Objective
 Customer churn prediction is crucial for telecom companies to:
